@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Web.SignalR", "src\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Repository", "src\Dapper.Repository\Dapper.Repository.csproj", "{AD04E7C4-C9AD-4E32-A9F3-0461B3FB8CF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.WebSignalRHub", "src\Dapper.WebSignalRHub\Dapper.WebSignalRHub.csproj", "{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{AD04E7C4-C9AD-4E32-A9F3-0461B3FB8CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD04E7C4-C9AD-4E32-A9F3-0461B3FB8CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD04E7C4-C9AD-4E32-A9F3-0461B3FB8CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{8C5ABE21-5A30-41CA-9930-DD16A30E02EC} = {5769B1CB-9D76-41A3-82A3-A98F940D9D83}
 		{B5F0DDEF-B64A-4AA5-9B1F-69BE1BA3DA8F} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
 		{AD04E7C4-C9AD-4E32-A9F3-0461B3FB8CF1} = {D892EAA3-1131-4CCE-9AE5-A8D3A0567F1F}
+		{C036E4A3-5D01-4B9E-85A1-0B8A653D711B} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46819C2D-99A0-45E5-8AEB-649FCBF8FA6B}
