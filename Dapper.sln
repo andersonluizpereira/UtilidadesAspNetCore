@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Presentation", "00-Presentation", "{5769B1CB-9D76-41A3-82A3-A98F940D9D83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Application", "01-Application", "{007508AB-D671-4E09-AC63-EC09366CF577}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Entities", "02-Entities", "{B9EF02D6-C54D-495A-B019-6B146957A0DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Infraestructure", "03-Infraestructure", "{98581B6D-BC39-4804-8124-F09441AC25F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-CrossCuting", "04-CrossCuting", "{5099A95E-1A68-430C-8A48-1E17F147A91A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.01-DataAgents", "03.01-DataAgents", "{1FBD3F11-E31E-4637-BCFA-4AE8EEAD999E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.DataAgents", "src\Dapper.DataAgents\Dapper.DataAgents.csproj", "{08B31DF2-9544-4E54-8DBF-8F074A4DBB2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.02-Repository", "03.02-Repository", "{D892EAA3-1131-4CCE-9AE5-A8D3A0567F1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Repository", "Dapper.Repository\Dapper.Repository.csproj", "{116F30EE-3893-4BD7-AFF9-EC333901348C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.1-PresentationWeb", "0.1-PresentationWeb", "{8C5ABE21-5A30-41CA-9930-DD16A30E02EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Web.SignalR", "Dapper.Web.SignalR\Dapper.Web.SignalR.csproj", "{5AFBF103-D460-4EDF-80BB-EF37994F1B20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B31DF2-9544-4E54-8DBF-8F074A4DBB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B31DF2-9544-4E54-8DBF-8F074A4DBB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B31DF2-9544-4E54-8DBF-8F074A4DBB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B31DF2-9544-4E54-8DBF-8F074A4DBB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{116F30EE-3893-4BD7-AFF9-EC333901348C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116F30EE-3893-4BD7-AFF9-EC333901348C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116F30EE-3893-4BD7-AFF9-EC333901348C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116F30EE-3893-4BD7-AFF9-EC333901348C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFBF103-D460-4EDF-80BB-EF37994F1B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFBF103-D460-4EDF-80BB-EF37994F1B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFBF103-D460-4EDF-80BB-EF37994F1B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFBF103-D460-4EDF-80BB-EF37994F1B20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FBD3F11-E31E-4637-BCFA-4AE8EEAD999E} = {98581B6D-BC39-4804-8124-F09441AC25F0}
+		{08B31DF2-9544-4E54-8DBF-8F074A4DBB2D} = {1FBD3F11-E31E-4637-BCFA-4AE8EEAD999E}
+		{D892EAA3-1131-4CCE-9AE5-A8D3A0567F1F} = {98581B6D-BC39-4804-8124-F09441AC25F0}
+		{116F30EE-3893-4BD7-AFF9-EC333901348C} = {D892EAA3-1131-4CCE-9AE5-A8D3A0567F1F}
+		{8C5ABE21-5A30-41CA-9930-DD16A30E02EC} = {5769B1CB-9D76-41A3-82A3-A98F940D9D83}
+		{5AFBF103-D460-4EDF-80BB-EF37994F1B20} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46819C2D-99A0-45E5-8AEB-649FCBF8FA6B}
+	EndGlobalSection
+EndGlobal
