@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Web.SignalR", "src\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Repository", "src\Dapper.Repository\Dapper.Repository.csproj", "{AD04E7C4-C9AD-4E32-A9F3-0461B3FB8CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.WebSignalRHub", "src\Dapper.WebSignalRHub\Dapper.WebSignalRHub.csproj", "{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.WebSignalRHub", "src\Dapper.WebSignalRHub\Dapper.WebSignalRHub.csproj", "{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
