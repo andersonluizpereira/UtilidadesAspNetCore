@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Repository", "src\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.WebSignalRHub", "src\Dapper.WebSignalRHub\Dapper.WebSignalRHub.csproj", "{C036E4A3-5D01-4B9E-85A1-0B8A653D711B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Web.WebSignalGroup", "src\Dapper.Web.WebSignalGroup\Dapper.Web.WebSignalGroup.csproj", "{71CD6D0E-3EF1-4AD5-93CA-AB2A6F390951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Web.WebSignalGroup", "src\Dapper.Web.WebSignalGroup\Dapper.Web.WebSignalGroup.csproj", "{71CD6D0E-3EF1-4AD5-93CA-AB2A6F390951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Web.SignalR.Angular", "src\Dapper.Web.SignalR.Angular\Dapper.Web.SignalR.Angular.csproj", "{C675A607-0FEE-4354-A5F4-B1FA92CE46AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Web.SignalR.Angular", "src\Dapper.Web.SignalR.Angular\Dapper.Web.SignalR.Angular.csproj", "{C675A607-0FEE-4354-A5F4-B1FA92CE46AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Web.Api.Angular", "src\Dapper.Web.Api.Angular\Dapper.Web.Api.Angular.csproj", "{CDB5EB2D-58BB-4C46-8452-2B2ACFE17AF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{C675A607-0FEE-4354-A5F4-B1FA92CE46AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C675A607-0FEE-4354-A5F4-B1FA92CE46AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C675A607-0FEE-4354-A5F4-B1FA92CE46AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB5EB2D-58BB-4C46-8452-2B2ACFE17AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB5EB2D-58BB-4C46-8452-2B2ACFE17AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB5EB2D-58BB-4C46-8452-2B2ACFE17AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB5EB2D-58BB-4C46-8452-2B2ACFE17AF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{C036E4A3-5D01-4B9E-85A1-0B8A653D711B} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
 		{71CD6D0E-3EF1-4AD5-93CA-AB2A6F390951} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
 		{C675A607-0FEE-4354-A5F4-B1FA92CE46AE} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
+		{CDB5EB2D-58BB-4C46-8452-2B2ACFE17AF5} = {8C5ABE21-5A30-41CA-9930-DD16A30E02EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46819C2D-99A0-45E5-8AEB-649FCBF8FA6B}
