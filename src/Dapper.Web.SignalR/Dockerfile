@@ -1,6 +1,5 @@
 FROM microsoft/dotnet:2.1-sdk AS build-env
 WORKDIR /app
-EXPOSE 80
 
 # Copiar csproj e restaurar dependencias
 COPY *.csproj ./
@@ -11,7 +10,7 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Build da imagem
-FROM microsoft/dotnet:2.1-aspnetcore-runtime
+FROM musing_wescoff
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "Dapper.Web.Api.Angular.dll"]
+ENTRYPOINT ["dotnet", "Dapper.Web.SignalR.dll"]
