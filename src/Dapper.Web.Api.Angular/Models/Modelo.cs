@@ -15,7 +15,6 @@ namespace Dapper.Web.Api.Angular.Models
         [Required]
         [StringLength(255)]
         public string Nome { get; set; }
-        public Marca Marca { get; set; }
         public int MarcaId { get; set; }
     }
 }

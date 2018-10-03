@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import Core = require("@angular/core");
 
 @Component({
   selector: 'app-veiculo-form',
-  templateUrl: './veiculo-form.component.html',
-  styleUrls: ['./veiculo-form.component.css']
+  templateUrl: './veiculo-form.component.html'
 })
-export class VeiculoFormComponent implements OnInit {
+export class VeiculoFormComponent{
+  public marcas: marca[];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+    http.get<marca[]>(baseUrl + 'api/marcas').subscribe(result => {
+      this.marcas = result;
+    }, error => console.error(error));
   }
 
+}
+
+interface modelo {
+  id: number;
+  nome: string;
+  marcaId: number;
+}
+
+interface marca {
+  id: number;
+  nome: string;
+  modelos: modelo[];
 }

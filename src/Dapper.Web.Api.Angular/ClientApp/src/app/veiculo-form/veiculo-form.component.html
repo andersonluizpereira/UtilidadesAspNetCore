@@ -1,3 +1,25 @@
-<p>
-  veiculo-form works!
-</p>
+<h1>Marcas de Veículos</h1>
+
+
+<p *ngIf="!marcas"><em>Loading...</em></p>
+
+<table class='table' *ngIf="marcas">
+  <thead>
+  <tr>
+    <th>Nome</th>
+    
+  </tr>
+  </thead>
+  <tbody *ngFor="let marca of marcas">
+  <tr>
+    <th>{{ marca.nome }} </th>
+  </tr>
+  <tr>
+    <th>Modelo</th>
+    <td *ngFor="let modelo of marca.modelos">
+      {{ modelo.nome }}
+    </td>
+  </tr>
+    
+  </tbody>
+</table>

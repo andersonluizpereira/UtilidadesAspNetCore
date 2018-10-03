@@ -23,7 +23,7 @@ namespace Dapper.Web.Api.Angular.Controllers
         [HttpGet("/api/marcas")]
         public async Task<IEnumerable<MarcaResource>> GetMarcas()
         {
-            var marcas = await context.Marcas.Include(m => m.Modelos).ToListAsync();
+            var marcas = await context.Marcas.Include(m => m.Modelos).Take(100).ToListAsync();
             return mapper.Map<List<Marca>, List<MarcaResource>>(marcas);
         }
     }
