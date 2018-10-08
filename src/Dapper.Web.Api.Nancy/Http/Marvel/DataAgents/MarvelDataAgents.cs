@@ -12,7 +12,7 @@ namespace Dapper.Web.Api.Nancy.Http.Marvel.DataAgents
 {
     public class MarvelDataAgents : HttpClient, IMarvelDataAgents
     {
-        public async Task<HttpResponseMessage> GetFromMagazine(string qtd)
+        public async Task<string> GetFromMagazine(string qtd)
         {
             if (String.IsNullOrEmpty(qtd) || Convert.ToInt32(qtd) > Convert.ToInt32("100") || Convert.ToInt32(qtd) < Convert.ToInt32("1"))
                 qtd = "10";
@@ -20,14 +20,12 @@ namespace Dapper.Web.Api.Nancy.Http.Marvel.DataAgents
             return await this.GetAsync($"comics?ts={ts}&apikey={Config.Configurations.GetSection("MarvelComicsAPI:PublicKey").Value}&hash={Hash.GerarHash(ts, Config.Configurations.GetSection("MarvelComicsAPI:PublicKey").Value, Config.Configurations.GetSection("MarvelComicsAPI:PrivateKey").Value)}&limit={Uri.EscapeUriString(qtd.ToString())}");
         }
 
-        public async Task<HttpResponseMessage> GetFromPerson(string name)
+        public async Task<string> GetFromPerson(string name)
         {
             if (String.IsNullOrEmpty(name))
                 name = "Captain America";
             string ts = DateTime.Now.Ticks.ToString();
-            return await this.GetAsync(
-                    $"characters?ts={ts}&apikey={Config.Configurations.GetSection("MarvelComicsAPI:PublicKey").Value}&hash={Hash.GerarHash(ts, Config.Configurations.GetSection("MarvelComicsAPI:PublicKey").Value, Config.Configurations.GetSection("MarvelComicsAPI:PrivateKey").Value)}&name={Uri.EscapeUriString(name)}")
-                ;
+            return await this.GetAsync($"characters?ts={ts}&apikey={Config.Configurations.GetSection("MarvelComicsAPI:PublicKey").Value}&hash={Hash.GerarHash(ts, Config.Configurations.GetSection("MarvelComicsAPI:PublicKey").Value, Config.Configurations.GetSection("MarvelComicsAPI:PrivateKey").Value)}&name={Uri.EscapeUriString(name)}");
             
         }
         

@@ -23,6 +23,7 @@ namespace Dapper.Web.Api.Nancy.Http
         internal readonly string EnvironmentPoint;
         internal readonly string ApiKeyPoint;
         internal readonly string ApiTokenPoint;
+      
 
         private IConfiguration _config;
 
@@ -55,12 +56,12 @@ namespace Dapper.Web.Api.Nancy.Http
             }
         }
 
-        public Task<HttpResponseMessage> GetAsync(string url)
+        public Task<string> GetAsync(string url)
         {
             return this.GetAsync(url, new CancellationToken(false));
         }
 
-        public Task<HttpResponseMessage> GetAsync(string url, CancellationToken cancellationToken)
+        public Task<string> GetAsync(string url, CancellationToken cancellationToken)
         {
             using (var client = new System.Net.Http.HttpClient())
 
@@ -68,7 +69,7 @@ namespace Dapper.Web.Api.Nancy.Http
                 client.BaseAddress = new Uri(this.BaseUrlEndPoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                return client.GetAsync(url, cancellationToken);
+                return client.GetAsync(url, cancellationToken).Result.Content.ReadAsStringAsync();
                
             }
         }

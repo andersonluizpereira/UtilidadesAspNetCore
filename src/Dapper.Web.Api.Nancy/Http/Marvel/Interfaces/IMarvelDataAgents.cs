@@ -8,7 +8,7 @@ namespace Dapper.Web.Api.Nancy.Http.Marvel.Interfaces
 {
     public interface IMarvelDataAgents
     {
-        Task<HttpResponseMessage> GetFromPerson(string name);
-        Task<HttpResponseMessage> GetFromMagazine(string qtd);
+        Task<string> GetFromPerson(string name);
+        Task<string> GetFromMagazine(string qtd);
     }
 }

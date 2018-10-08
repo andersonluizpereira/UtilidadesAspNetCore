@@ -19,11 +19,7 @@ namespace Dapper.Web.Api.Nancy.Controllers
             var http = new Http.HttpClient();
 
             Get("/", args => JsonConvert.SerializeObject("Hello Marvel"));
-            Func<dynamic, Task<HttpResponseMessage>> action = async args =>
-                {
-                 return await marvel.GetFromPerson(args.Nome);
-                };
-            base.Get("/api/Personagem/{Nome}", action);
+            Get("/api/Personagem/{Nome}", args => JsonConvert.SerializeObject(marvel.GetFromPerson(args.Nome)));
             Get("/api/Personagem/paginas/{Qtd}", args => JsonConvert.SerializeObject(marvel.GetFromMagazine(args.Qtd)));
         }
     }

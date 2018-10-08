@@ -11,8 +11,8 @@ namespace Dapper.Web.Api.Nancy.Http
     {
         void ChangeUrlBase(HttpClient.BaseUrl baseUrl);
 
-        Task<HttpResponseMessage> GetAsync(string url);
-        Task<HttpResponseMessage> GetAsync(string url, CancellationToken cancellationToken);
+        Task<string> GetAsync(string url);
+        Task<string> GetAsync(string url, CancellationToken cancellationToken);
 
         Task<HttpResponseMessage> PostAsync(string url, object postContent);
         Task<HttpResponseMessage> PostAsync(string url, object postContent, CancellationToken cancellationToken);
